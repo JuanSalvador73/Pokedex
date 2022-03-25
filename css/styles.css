@@ -1,0 +1,140 @@
+/*Estilos Pokedex*/
+
+body{
+    align-content: center;
+    height: 100%;
+    background-image: linear-gradient(#00ffff, #0099ff);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.main-container{
+    box-sizing: border-box;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    
+}
+
+
+.img_center img{
+    width: 100%;
+    max-width: 800px;
+    min-width: 400px;
+    /*border: 1px solid black;*/
+}
+
+
+.img_center{
+    text-align: center;
+    margin: auto;
+}
+
+form{
+    width: 300px;
+    margin: 20px auto;
+}
+
+input {
+    width: 260px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #008ae6;
+}
+
+/*Contenedor general de la pokecard*/
+.poke-card{
+    position: relative;
+    height: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 450px;
+    border-radius: 20px;
+    color: #000;
+    text-align:center;
+    padding:25px;
+    margin:0 auto;
+    background-color: #fff;
+    border: 1px solid #0080ff;
+    box-shadow: 1px 1px 40px 1px #0099ff;
+}
+
+.pokebola{
+    /*background-color: red;*/
+    border-radius: 180%;
+    margin-top: -105px;
+    width: 6%;
+    position: absolute;
+    margin-left: 95px;
+}
+
+.poke-card::before{
+    content:'';
+    /*background: radial-gradient(black 33%, transparent 33%);*/
+    background-size: 3px 3px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left:  10px;
+    top: 10px;
+    z-index: -1;
+}
+
+/*Este es el de la imagen en general*/
+.img-container{
+    position: relative;
+    width: 180px;
+    margin: 10px auto
+}
+
+/*Este es para el título donde va el número del pokemon*/
+/*
+.poke-type-title::before{
+    display: none;
+}
+
+*/
+.poke-title{
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px; 
+    font-weight: bold;
+    padding: 5px 0px 10px 0px;
+    /*border: 1px solid red;*/
+    /*border-radius: 15px;*/
+    width: auto;
+    /*background-color: #ffffe6;*/
+}
+
+/*
+
+*/
+
+/*Estos son las estadísticas del pokemon*/
+.poke-stats div{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 18px;
+}
+
+/*Estos son los datos de color y estado natural*/
+.poke-types div{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid #80d4ff;
+}
+
+/*Este es para la imagen del Pokemon*/
+.poke-img{
+    width: 180px;
+    border-radius: 50%;
+    
+}
